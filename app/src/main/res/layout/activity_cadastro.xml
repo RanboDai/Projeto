@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#343434">
+    android:background="#343434"
+    tools:context=".cadastro">
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,7 +38,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/cadasNome"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -53,7 +54,7 @@
                 android:textColorHint="#ffffff" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/cadasEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Email"
@@ -69,7 +70,7 @@
                 android:background="@drawable/edittext_background" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/cadasSenha"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Password"
@@ -85,7 +86,7 @@
                 android:background="@drawable/edittext_background"/>
 
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/cadasSenha2"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="32dp"
@@ -101,7 +102,7 @@
                 android:textColorHint="#ffffff" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/irMain"
                 android:layout_width="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginTop="16sp"
@@ -109,7 +110,7 @@
                 app:srcCompat="@drawable/btn_login" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textFacaLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -117,6 +118,8 @@
                 android:textAlignment="center"
                 android:textColor="#E1A500"
                 android:textStyle="bold" />
+
+
 
 
 
