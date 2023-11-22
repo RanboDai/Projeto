@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 public class perfil extends AppCompatActivity {
 
     private TextView nomeUsuario, emailUsuario;
-    private AppCompatButton button3;
+    private AppCompatButton button3, btLoja;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String usuarioID;
 
@@ -38,6 +38,14 @@ public class perfil extends AppCompatActivity {
                 Intent intent = new Intent(perfil.this,MainActivity.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        btLoja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(perfil.this, lista.class);
+                startActivity(intent);
             }
         });
     }
@@ -65,5 +73,6 @@ public class perfil extends AppCompatActivity {
     }
     private void IniciarComponentesPer(){
         button3 = findViewById(R.id.button3);
+        btLoja = findViewById(R.id.btLoja);
     }
 }

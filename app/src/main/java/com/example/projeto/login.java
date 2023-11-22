@@ -60,8 +60,6 @@ public class login extends AppCompatActivity {
                 }else {
                     AutenticarUsuario(view);
                 }
-//                Intent intent = new Intent(login.this,perfil.class);
-//                startActivity(intent);
             }
         });
     }
